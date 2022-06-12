@@ -8,7 +8,7 @@ from flask_marshmallow import Marshmallow
 
 #criar a base de dados com o mysql workbench com o nome de livraria
 app = Flask(__name__)#instanciar aplicacao
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:AlucarD20@localhost:3306/Livraria'#configurar a conexao com o banco de dados
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:<passordfromroot>@localhost:3306/Livraria'#configurar a conexao com o banco de dados
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db=SQLAlchemy(app)#instanciar o banco de dados
