@@ -13,7 +13,7 @@ from livros import  category_schema
 from livros import LivroSchema
 
 app=Flask(__name__)#instanciar aplicacao
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:AlucarD20@localhost:3306/Livraria'#configurar a conexao com o banco de dados
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:<PasswordfromRoot>@localhost:3306/Livraria'#configurar a conexao com o banco de dados
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False#instanciar o banco de dados
 db=SQLAlchemy(app)#instanciar o banco de dados
 
