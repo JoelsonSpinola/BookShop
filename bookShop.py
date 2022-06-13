@@ -133,4 +133,4 @@ def get_livros_CD_DVD_autor(autor): #criar a funcao
 
 
 if __name__ == "__main__":  #executar o programa
-    app.run(debug=True)#inicia a aplicacao
+     app.run(host="0.0.0.0",port=5000, debug=True)#inicia a aplicacao
